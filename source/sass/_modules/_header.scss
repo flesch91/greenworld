@@ -1,0 +1,21 @@
+$color: red;
+.header{
+  .test{
+    color: $color;
+
+    .test1{
+      color: $color;
+      .test2{
+        color: green;
+      }
+    }
+  }
+
+  .test a{
+    color: blue;
+
+    &:hover{
+      color: red;
+    }
+  }
+}

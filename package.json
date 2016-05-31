@@ -1,0 +1,23 @@
+{
+  "name": "greenworld",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flesch91/greenworld.git"
+  },
+  "author": "Taras Shchadylo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flesch91/greenworld/issues"
+  },
+  "homepage": "https://github.com/flesch91/greenworld#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
+}

@@ -1,0 +1,9 @@
+### Sass template
+.sass-cache/
+*.css.map
+node_modules/
+psd/
+.idea
+*.iml
+
+# Created by .ignore support plugin (hsz.mobi)
