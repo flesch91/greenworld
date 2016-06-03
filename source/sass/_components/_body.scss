@@ -1,0 +1,38 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.25em;
+  background-color: $bg-body-color;
+}
+
+// Footer push down
+html, body{
+  height: 100%;
+}
+.page-wrap{
+  min-height: 100%;
+  margin-bottom: -$footer-height;
+
+  &:after{
+    content: '';
+    display: block;
+  }
+}
+.page-wrap:after,
+footer{
+  height: $footer-height;
+}

@@ -1,1 +1,21 @@
-@import '_modules/_header';
+// Components
+// ----------
+// Core variables and mixins
+@import "variables";
+@import '_components/_fonts/fonts';
+@import "_components/body";
+@import "_components/mixins";
+@import "_components/normalize";
+@import "_components/grid";
+@import "_components/utilities";
+@import "_components/responsive-utilities";
+@import "_components/button";
+@import "_components/icons";
+
+
+// Modules
+// --------
+
+@import "_modules/header";
+@import "_modules/footer";
+

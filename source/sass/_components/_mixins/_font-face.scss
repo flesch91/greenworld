@@ -1,0 +1,13 @@
+// Font face
+@mixin font-face($family, $filename: $family, $style: normal, $weight: normal) {
+  @font-face {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    src: resolve("#{ $filename }.eot");
+    src:  resolve("#{ $filename }.eot?#iefix") format('embedded-opentype'),
+    resolve("#{ $filename }.woff") format('woff'),
+    resolve("#{ $filename }.ttf") format('truetype'),
+    resolve("#{ $filename }.svg##{ $family }") format('svg');
+  }
+}

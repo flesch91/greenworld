@@ -1,0 +1,13 @@
+.offer{
+  &-title{
+    h2{
+      color: red;
+    }
+  }
+  &-description{
+    color: #eee;
+    p{
+      color: #000;
+    }
+  }
+}
