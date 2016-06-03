@@ -9,7 +9,7 @@ var sass = require('gulp-sass');
 gulp.task('sass', function () {
     return gulp.src('source/sass/**/*.scss')
         .pipe(sass({
-            outputStyle: 'compressed'
+            outputStyle: 'nested'
         }).on('error', sass.logError))
         .pipe(gulp.dest('source/assets/css'));
 });
