@@ -1170,6 +1170,59 @@ textarea {
       border: 2px solid #4b4b4b;
       color: #4b4b4b; }
 
+[class*="icon-"] {
+  position: relative;
+  display: inline-block; }
+
+.icon-position {
+  width: 13px;
+  height: 13px;
+  background: url("../images/icon-position.png") center center no-repeat; }
+  .icon-position.__white {
+    background: url("../images/icon-position-white.png") center center no-repeat; }
+
+.icon-date {
+  width: 13px;
+  height: 13px;
+  background: url("../images/icon-date.png") center center no-repeat; }
+  .icon-date.__white {
+    background: url("../images/icon-date-white.png") center center no-repeat; }
+
+.icon-user {
+  width: 20px;
+  height: 20px;
+  background: url("../images/icon-user.png") center center no-repeat; }
+
+.icon-stars {
+  width: 20px;
+  height: 20px;
+  background: url("../images/icon-stars-white.png") center center no-repeat; }
+
+.icon-sound {
+  width: 20px;
+  height: 20px;
+  background: url("../images/icon-sound-white.png") center center no-repeat; }
+
+.icon-effect {
+  width: 20px;
+  height: 20px;
+  background: url("../images/icon-effect-white.png") center center no-repeat; }
+
+.icon-skin {
+  width: 20px;
+  height: 20px;
+  background: url("../images/icon-skin-white.png") center center no-repeat; }
+
+.icon-text {
+  width: 20px;
+  height: 20px;
+  background: url("../images/icon-text-white.png") center center no-repeat; }
+
+.icon-play {
+  width: 19px;
+  height: 27px;
+  background: url("../images/icon-play.png") center center no-repeat; }
+
 footer .footer-t {
   height: 230px; }
 
