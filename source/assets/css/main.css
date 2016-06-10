@@ -15,7 +15,7 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.25em;
-  background-color: #eaeaea; }
+  background-color: #ffffff; }
 
 html, body {
   height: 100%; }
@@ -1222,6 +1222,40 @@ textarea {
   width: 19px;
   height: 27px;
   background: url("../images/icon-play.png") center center no-repeat; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
+header {
+  height: 50px;
+  /*.user-menu {
+
+  }*/ }
+  header .search {
+    float: right; }
+  header .phone-number {
+    float: left;
+    display: inline-block;
+    background-color: #0074D9; }
+  header .languages-menu-active {
+    float: right;
+    background-color: #999999; }
+  header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    header ul li {
+      display: inline-block; }
+    header ul a {
+      text-decoration: none; }
+
+nav {
+  margin: 40px 0 40px 0; }
+  nav .logo {
+    float: left; }
+  nav ul {
+    float: right; }
 
 footer .footer-t {
   height: 230px; }
