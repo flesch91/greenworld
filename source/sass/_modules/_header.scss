@@ -5,19 +5,23 @@ p{
 }
 ul{
   padding: 0;
+  margin: 16px 0 16px 0;
 }
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
   padding: 0;
 }
+a{
+  color: #191a1b;
+}
+$border-bottom: 1px solid #e7e9eb;
 /*GENERAL STYLE*/
 
 /*MENU REGISTRATION*/
 header{
   height: 50px;
-  border-bottom: 1px solid #e7e9eb;
+  border-bottom: $border-bottom;
     .nav-number{
       li{
-        line-height: 20px;
         font-size: 16px;
         list-style-type: none;
       }
@@ -30,35 +34,70 @@ header{
         margin-right: 10px;
       }
     }
-    .dropdown{
-      margin-right: 20px;
+  .search{
+    img {
+      float: right;
+      margin: 18px 0 18px 0;
     }
+  }
+    .dropdown{
+      position: absolute;
+      top: 100%;
+      display: none;
+    }
+
     .nav-registration {
       ul{
-        //text-align: right;
+        float: right;
+        .languish{
+          padding-right:40px ;
+        }
       }
       li{
         display: inline-block;
+        position: relative;
+      }
+      li:hover {
+        .dropdown{
+          display: block;
+        }
       }
       a{
-        padding-left: 10px;
+        //padding-left: 10px;
         font-size: 16px;
         text-decoration: none;
-        line-height: 20px;
       }
-      a:hover{
 
-      }
       #icon:before {
         content: "";
         background: url("../images/planet.png") center center no-repeat;
         width: 15px;
+        height: 14px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      #icon:after {
+        content: "";
+        background: url("../images/menu.png") center center no-repeat;
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        margin-left: 10px;
+      }
+      #enter:before {
+        content: "";
+        background: url("../images/key.png") center center no-repeat;
+        width: 20px;
         height: 15px;
         display: inline-block;
         margin-right: 10px;
       }
-      span{
-        padding-left: 10px;
+      .line {
+        border-bottom: 2px solid #8c8c8d;
+      }
+      span {
+        padding: 0 10px 0 10px;
+        color: #bcbec2;
       }
     }
 
@@ -67,13 +106,34 @@ header{
 /*MENU REGISTRATION*/
 
 /*MENU NAVIGATION*/
-nav{
-  margin: 40px 0 40px 0;
+nav {
+  height: 90px;
+  border-bottom: $border-bottom;
   .logo{
-
+    margin: 17px 0;
   }
-  ul{
 
+  ul {
+    float: right;
+    margin: 36px 0;
   }
+
+  li {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 40px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+
+
 }
 /*MENU NAVIGATION*/
