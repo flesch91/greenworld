@@ -1,0 +1,96 @@
+/*GENERAL STYLE*/
+
+/*GENERAL STYLE*/
+
+/*MAIN*/
+.offer-title {
+  margin-top: 40px;
+  background: url("../images/photo-1.png") center center no-repeat;
+  background-size: cover;
+  height: 400px;
+ .opaciti-box {
+   padding: 0 40px 0 40px;
+   background: rgba(255,255,255,255);
+   float: right;
+   height: 260px;
+   width: 450px;
+   margin: 100px 40px 0 0;
+   h1 {
+     line-height: 100%;
+     font-size: 33px;
+     font-weight: lighter;
+     text-transform: uppercase;
+   }
+   p {
+     font-size: 17px;
+     text-align: left;
+     line-height: 1.5;
+   }
+   .arrow-nav {
+     margin-top: 25px;
+     img {
+       padding: 0 5px;
+
+     }
+   }
+ }
+}
+
+.offer-description {
+  margin-top: 30px;
+  .size{
+    padding: 0 10px;
+  }
+  .man-photo {
+    background: rgb( 0, 0, 0 ) url("../images/man-photo.png") center center no-repeat ;
+    background-size: cover;
+    height: 340px;
+    margin-top: 10px;
+  }
+  .woman-photo {
+    background: url("../images/woman-photo.png") center center no-repeat;
+    background-size: cover;
+    height: 340px;
+    margin-top: 10px;
+  }
+  .kids-photo {
+    background: url("../images/kids-photo.png") center center no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    height: 340px;
+    margin-top: 10px;
+  }
+  .offers {
+    height: 340px;
+    border: 2px solid #4e4e4f;
+    margin-top: 10px;
+
+  }
+  .box-shadow{
+    position: relative;
+    top: 125px;
+    left: 35px;
+    right: 35px;
+    width: 200px;
+    height: 90px;
+    background: rgba(0,0,0,0.5);
+    h2{
+      color: #fff;
+      font-weight: lighter;
+      text-transform: uppercase;
+      font-size: 30px;
+      text-align: center;
+      line-height: 1.111;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 10px;
+    }
+  }
+}
+
+
+/*MAIN*/
+
+
+

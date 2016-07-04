@@ -44,6 +44,9 @@ header{
       position: absolute;
       top: 100%;
       display: none;
+      a{
+        display: block;
+      }
     }
 
     .nav-registration {
@@ -63,7 +66,6 @@ header{
         }
       }
       a{
-        //padding-left: 10px;
         font-size: 16px;
         text-decoration: none;
       }
@@ -111,29 +113,33 @@ nav {
   border-bottom: $border-bottom;
   .logo{
     margin: 17px 0;
+    a{
+
+      text-decoration: none;
+    }
   }
 
   ul {
     float: right;
+
     margin: 36px 0;
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+
+      padding-left: 40px;
+    }
+    a{
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
   }
-
-  li {
-    display: inline-block;
-    list-style-type: none;
-    padding-left: 40px;
-  }
-
-  a {
-    text-decoration: none;
-    font-size: 18px;
-    text-transform: uppercase;
-  }
-
-  a:hover{
-    text-decoration: underline;
-  }
-
-
 }
 /*MENU NAVIGATION*/
