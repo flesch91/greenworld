@@ -1,5 +1,19 @@
 /*GENERAL STYLE*/
-
+@mixin description-shadow(){
+  width: 100%;
+  height: 7em;
+  padding: 0 60px;
+  position: relative;
+  top: 125px;
+  background: rgba(0,0,0,0.8);
+}
+@mixin description-shadow-h3(){
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.875em;
+  font-weight: 700;
+  line-height: normal;
+}
 /*GENERAL STYLE*/
 
 /*MAIN*/
@@ -168,12 +182,12 @@
       font-size: 33px;
       font-weight: lighter;
       text-transform: uppercase;
-      margin-right: 20px;
+      margin: 40px 20px 40px 0;
     }
 
     .flex-control-naw {
       .flex-active{
-        margin: 30px 10px 0 0;
+        margin: 43px 10px 0 0;
         display: inline-block;
       }
 
@@ -201,19 +215,10 @@
       margin: 0 30px;
 
       .description-shadow{
-        width: 100%;
-        height: 7em;
-        padding: 0 60px;
-        position: relative;
-        top: 125px;
-        background: rgba(0,0,0,0.8);
+        @include description-shadow();
 
         h3 {
-          margin: 0;
-          padding: 30px 0 18px 0;
-          color: #ffffff;
-          font-size: 1.875em;
-          font-weight: 700;
+          @include description-shadow-h3();
         }
       }
       p{
@@ -228,20 +233,11 @@
       height: 363px;
       margin: 0 30px;
 
-      .description-shadow{
-        width: 100%;
-        height: 7em;
-        padding: 0 60px;
-        position: relative;
-        top: 125px;
-        background: rgba(0,0,0,0.8);
+      .description-shadow {
+        @include description-shadow();
 
         h3 {
-          margin: 0;
-          color: #ffffff;
-          font-size: 1.875em;
-          font-weight: 700;
-          line-height: normal;
+          @include description-shadow-h3();
         }
 
         p{
@@ -253,6 +249,139 @@
   }
 
 }
+
+.reviews{
+  margin-top: 40px;
+  .events-flex{
+    width: 100%;
+    height: 1px;
+    background-color: #e7e9eb;
+
+    h2{
+      float: left;
+      font-size: 33px;
+      font-weight: lighter;
+      text-transform: uppercase;
+      margin: 40px 20px 40px 0;
+    }
+
+    .flex-control-naw {
+      .flex-active{
+        margin: 43px 10px 0 0;
+        display: inline-block;
+      }
+
+      a {
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        background-color: #ffffff;
+        border: 1px #d7d7d7 solid;
+        border-radius: 50%;
+
+      }
+      a:hover {
+        background-color: #4e4e4f;
+      }
+    }
+  }
+}
+
+  .description-reviews{
+    margin: 0 -16px;
+      .reviews-description{
+        margin: 0 16px;
+        height: 10.125em;
+        border: 0.063em solid #afafb4;
+        img {
+          position: relative;
+          top: 15px;
+          left: 15px;
+        }
+        p{
+          position: absolute;
+          color: #4e4e4f;
+          top: 30px;
+          left: 58px;
+          right: 45px;
+          //padding: 0 45px;
+          font-size: 1.125em;
+          font-weight: 300;
+          line-height: 1.688em;
+          text-align: justify;
+        }
+      }
+    .reviews-description-border {
+      margin: 0 16px;
+      position: absolute;
+      left: 15px;
+      top: 15px;
+      width: 97%;
+      height: 13.0em;
+      border: 0.063em solid #4e4e4f;
+      z-index: 1;
+      .reviews-description-background{
+        z-index: 2;
+        position: absolute;
+        left: 80px;
+        top: 127px;
+        background-color: #fff;
+          p {
+            position: relative;
+            top: 7px;
+            float: right;
+            font-size: 1.125em;
+            line-height: 1.875em;
+            span {
+              color: #bcbec2;
+              font-size: 1em;
+              font-weight: 300;
+            }
+          }
+
+        img {
+          position: relative;
+          padding: 15px;
+
+        }
+      }
+    }
+  }
+
+    .reviews-mail {
+      margin: 0 16px;
+      height: 14.063em;
+      border: 0.125em solid #4e4e4f;
+      .mail-sent{
+        position: relative;
+        top: 60px;
+        img {
+          position: relative;
+          left: 15px;
+          float: left;
+          text-align: center;
+        }
+        h3{
+          color: #191a1b;
+          font-size: 1.563em;
+          font-weight: 300;
+          line-height: 1.438em;
+          text-transform: uppercase;
+          text-align: center;
+        }
+      }
+    }
+    .contact-container {
+      margin-top: 80px;
+      width: 100%;
+      height: 1px;
+      background-color: #e7e9eb;
+      .contact {
+        padding-top: 30px;
+      }
+    }
+
+
 
 
 
